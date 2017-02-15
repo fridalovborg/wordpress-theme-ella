@@ -1,0 +1,247 @@
+/* ----------------------------------------------------------------------------
+		 DESKTOP SETTINGS
+---------------------------------------------------------------------------- */
+
+/* ---------------------------------------------------------------------------- 
+		 PAGE-NEWS
+---------------------------------------------------------------------------- */
+
+.page-template-page-news {
+
+	.wrapper {
+	
+		
+
+		article {
+			//width: 50%;
+
+			section {
+
+				p {
+
+				}
+			}
+		}
+
+	}
+}
+
+/* ----------------------------------------------------------------------------
+		 404-PAGE
+---------------------------------------------------------------------------- */
+
+.wrapper-404 {
+	max-width: 800px;
+	margin: 0 auto;
+	text-align: center;
+
+	.content {
+
+	    img {
+	    	width: 700px;
+	    }
+	}
+	
+	.page-header {
+
+		h1 {
+			font-size: 2.6em;
+		}
+	}
+}
+
+
+/* ---------------------------------------------------------------------------- 
+		 PAGE-NEWS
+---------------------------------------------------------------------------- */
+
+.page-template-page-news {
+
+	.wrapper {
+
+	}
+}
+
+.grid-news {
+	display: flex;
+    //flex-wrap: wrap; // allow wrapping items
+	margin: 0 auto;
+
+	.grid_cell-news {
+		border: none;
+		text-align: center;
+		border: 5px solid $black;
+		
+		p {
+
+		}
+
+		.grid_content-news {
+			display:inline-block;
+			width: 45%;
+			text-align: center;
+			padding-top: -10px;
+			flex-grow: 1;
+    		flex-basis: 50%; // 50% for two in a row, 33% three in a row etc.
+    		align-self: flex-start;
+
+    		.top {
+    			align-self: flex-start;
+    		}
+			
+			.blooper {
+
+				width: auto;
+				height: 400px;
+			
+			}
+
+			h3 {
+
+			}
+
+			p, a {
+
+			}
+		}
+
+		&:hover {
+			
+			h3 {
+
+			}
+		}
+	}
+}
+
+/* ----------------------------------------------------------------------------
+		 HEADER
+---------------------------------------------------------------------------- */
+
+.header {
+	//background-color: rgba(128, 85, 0, 0.1); // ta bort?
+	height: 100px;
+	position: absolute; 
+
+	h1 {
+		font-size: 2.5em;
+		color: $black;
+
+
+		a {
+			margin-top: 20px;
+		}
+
+		a:hover {
+			color: $white;
+		}
+	}
+
+}
+
+
+/* ----------------------------------------------------------------------------
+		 NAVIGATION-BAR
+---------------------------------------------------------------------------- */
+
+nav {
+	display: block;
+	position: absolute;
+	//background-color: rgba(128, 85, 0, 0.1); // ta bort?
+	width: 100%;
+
+	.fixed {
+		position: fixed;
+		text-transform: uppercase;
+
+		ul {
+			list-style-type: none;
+			display: inline;
+
+			li {
+				
+				float: left;
+				padding: 90px 20px;
+				display: block;
+
+				border-top: none;
+				border-bottom: none;
+
+				&:nth-child(odd) {
+					background-color: rgba(128, 85, 0, 0.0);
+				}
+
+				&:nth-child(even) {
+					background-color: rgba(128, 85, 0, 0.0);
+				}
+
+				a {
+					display: inline-block;
+				}
+
+				&.current-menu-item a {
+					color: $white;
+					border: 4px solid $white;
+					padding: 5px;
+					margin: -10px;
+					margin-top: -8px;
+					margin-left: -8px;
+				}
+			}
+		}
+	}
+}
+
+.bg_desc_color {
+	position: absolute;
+	width: 100%;
+	height: 150px;
+	//background-color: pink;
+	background-color: rgba(128, 85, 0, 0.1);
+	// lägg till bakgrundfärg om en vill!
+}
+
+/* ---------------------------------------------------------------------------- 
+		 ARROW
+---------------------------------------------------------------------------- */
+
+.arrow {
+	display: none;
+}
+
+/* ---------------------------------------------------------------------------- 
+		 ARTICLE
+---------------------------------------------------------------------------- */
+
+.mobile_hide {
+	display: block; 
+}
+
+.mobile_show {
+	display: none; 
+}
+
+header {
+
+	h1 {
+
+		font-size: 2.6em;
+	}
+
+}
+
+article {
+
+	h2 {
+
+		font-size: 8.2em;
+	}	
+}
+
+.grid {
+	font-size: 3.2em;
+}
+.grid_cell {
+	width: 50%;
+	height: 70vh;
+}

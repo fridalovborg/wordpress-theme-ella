@@ -1,0 +1,39 @@
+/* ----------------------------------------------------------------------------
+            MIXINS FOR DESKTOP
+---------------------------------------------------------------------------- */
+
+// /* Settings controlling the background images */
+// @mixin backImage($image) {
+// 	background-image: url($image);
+// 	background-repeat: no-repeat;
+// 	background-position: center;
+// 	background-attachment: fixed;
+// 	background-size: cover;
+//  	-webkit-background-size: cover;
+//   	-moz-background-size: cover;
+//   	-o-background-size: cover;
+// }
+
+// /* Settings controlling the white box on top of backgrounds in desktop versions */
+// @mixin whitebox {
+// 	background: $primary-color;
+// 	box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+// 	float: none;
+//     margin: 50px auto;
+//     padding: 35px;
+//     text-align: center;
+// 	width: 750px;
+// }
+
+// /* Settings and controlling the arrow animation on page index.php */
+// @mixin arrow {
+// 	bottom: 50px;
+// 	left: 0;
+// 	margin: auto;
+// 	position: absolute;
+// 	right: 0;
+// 	height: 70px;
+// 	width: 100px;
+// 	-webkit-animation: bounce 1s infinite; /* Safari */
+// 	animation: bounce 1s infinite;
+// }

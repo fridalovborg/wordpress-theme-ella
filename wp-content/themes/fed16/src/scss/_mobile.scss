@@ -1,0 +1,454 @@
+/* ----------------------------------------------------------------------------
+		 MOBILE SETTINGS
+---------------------------------------------------------------------------- */
+
+.mobile_hide {
+	display: none; 
+}
+
+.mobile_show {
+	display: block; 
+}
+
+/* ----------------------------------------------------------------------------
+		 404-PAGE & SEARCH
+---------------------------------------------------------------------------- */
+
+.wrapper-404 {
+	max-width: 400px;
+	margin: 0 auto;
+	text-align: center;
+
+	.content {
+
+	    img {
+	    	width: 400px;
+	    }
+
+	}
+
+	.page-header {
+
+		color: pink;
+		font-family: $font_playfair;
+		border-bottom: 4px solid pink;
+
+		h1 {
+			font-size: 1.6em;
+			margin: .2em 0;
+			padding: 5px;
+		}
+
+		p {
+			font-style: italic;
+			font-size: 24px;
+		}
+	}
+
+	main {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		margin: 0 -1em;
+		text-align: center;
+
+		article {
+			flex: 1 0 300px;
+			padding: 1em;
+			height: 200px;
+			font-family: $font_playfair;
+
+			a {
+				text-decoration: none;
+				color: inherit;
+			}
+		
+			.featured {
+				position: relative;
+				height: 100%;
+				width: 100%;
+				background-size: cover;
+				background-repeat: no-repeat;
+				filter: grayscale(100%);
+
+				h2 {
+					position: absolute;
+					left: 0;
+					bottom: 2em;
+					font-size: 20px;
+					background: rgba(255, 255, 255, .7);
+					display: inline-block;
+					padding: .1em .3em;
+				}
+			}
+
+			.meta {
+				display: flex;
+				justify-content: space-between;
+				font-size: 14px;
+
+				date {
+					flex: 1 0 110px;
+					font-weight: bold;
+				}
+
+				p {
+					flex: 2 200px;
+				}
+			}
+		}
+
+		section {
+			font-size: 18px;
+			font-style: italic;
+			margin: 2em auto 2em auto;
+			border-top: 4px solid pink;
+			width: 100%;
+
+		
+			input {
+				border: 0;
+				border-bottom: 5px solid #000;
+				font-style: italic;
+				font-family: $font_playfair;
+			}
+		}
+	}
+}
+
+/* ----------------------------------------------------------------------------
+		 HEADER
+---------------------------------------------------------------------------- */
+
+.relative {
+	position: relative;
+	z-index: 2;
+}
+
+.header {
+	width: 100%;
+	z-index: 50;
+
+
+	h1 {
+		letter-spacing: 10px;
+		text-align: center;
+
+
+		a {
+			font-size: 1.2em;
+			text-decoration: none;
+			color: $black;
+			font-family: $alegreya;
+			display: block;
+		}
+	}
+
+}
+
+.bg_color {
+	background-color: pink; // ändra till white
+	width: 100%;
+	z-index: 1;	
+}
+
+/* ----------------------------------------------------------------------------
+		 NAVIGATION-BAR
+---------------------------------------------------------------------------- */
+
+nav {
+	display: none;
+	width: 100%;
+	z-index: 40; 
+
+	.fixed {
+		
+		text-transform: uppercase;
+
+		ul {
+			display: block;
+			margin: 0;
+			padding: 0;
+
+			li {
+
+				padding: 20px 15px;
+				//border-top: 1px solid #eee;
+
+				&:nth-child(odd) {
+					background-color: #f2f2f2;
+				}
+
+				a {
+					font-family: $work_sans;
+					display: block;
+					color: $black;
+					text-decoration: none;
+					font-weight: 900;
+					line-height: 125%;
+				}
+
+				a:hover {
+					color: $white;
+				}
+
+				&.current-menu-item a {
+					color: $white;
+				}
+			}
+		}
+	}
+}
+
+
+/* ---------------------------------------------------------------------------- 
+		 ARROW
+---------------------------------------------------------------------------- */
+
+.arrow {
+
+	position: relative;
+
+	.arrow_down {
+		display: block;
+		position: absolute;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+
+	.flip {
+		transform: rotate(180deg);
+		margin-top: -20px;
+		margin-left: -20px;
+		border-top: 20px solid #e2e2e2;
+	}
+}
+
+.arrow_down {
+	width: 0;
+	height: 0;
+	border-left: 20px solid transparent;
+	border-right: 20px solid transparent;
+	border-top: 20px solid pink; //ändra till white?
+}
+
+/* ---------------------------------------------------------------------------- 
+		 WRAPPER
+---------------------------------------------------------------------------- */
+
+.wrapper {
+	
+	width: 100%;
+	margin: auto;
+	text-align: center;
+
+	h2 {
+		margin: 0;
+	}
+}
+
+article {
+
+	position: relative;
+    display: block;
+    width: auto;
+
+	h2 {
+		font-size: 5.2em;
+		font-weight: 800;
+		color: $white;
+		line-height: 0;
+	    position: absolute;
+	    top: 50%;
+	    width: 100%;
+	    text-align: center;
+	    left: 0;
+	    margin: 0;
+	    padding: 0;
+	}
+}
+
+/* ---------------------------------------------------------------------------- 
+		 PAGE-NEWS
+---------------------------------------------------------------------------- */
+
+.page-template-page-news,.single {
+
+	.wrapper {
+
+		padding-top: 15%;
+		
+		h2 {
+			font-family: $font_playfair;
+			font-size: 3.2em;
+		}
+	}
+}
+
+.grid-news {
+		display: flex;
+		flex-wrap: wrap;
+		margin: 0 auto;
+		width: 80%;
+
+	.grid_cell-news {
+		position: relative;
+		margin-top: 20px;
+		border: 5px solid $black;
+		padding: 10px;
+		text-align: center;
+		justify-content: center;
+
+		.tags {
+			font-style: italic;
+			font-family: $avenir;
+			font-size: 0.8em;
+		}
+
+		.grid_content-news {
+			margin: 10px;
+
+			.link {
+				color: pink;
+			}
+			
+			.blooper {
+				background-size: cover;
+				width: 80%;
+				height: 350px;
+				margin-left: 10%;
+			}
+
+			h3 {
+				font-family: $avenir;
+				font-size: 1.5em;
+			}
+
+			p, a {
+				text-align: justify;
+				font-family: $avenir;
+				font-size: 0.8em;
+				color: $black;
+			}
+		}
+
+		&:hover {
+			border: 5px solid pink;
+
+			h3 {
+				font-style: italic;
+				color: pink;
+				text-decoration: line-through;
+			}
+		}
+	}
+}
+
+
+/* ---------------------------------------------------------------------------- 
+		 FLEXBOX GRID SYSTEM
+---------------------------------------------------------------------------- */
+
+.grid {
+	display: flex;
+	justify-content:space-between;
+	flex-flow: row; 
+	flex-wrap: wrap;
+
+	font-family: $font_playfair;
+	font-size: 2.2em;
+}
+
+.grid_cell {
+	width: 100%;
+	background-position: center center; 
+	height: 60vh;
+	position: relative;
+	background-size: 100%;
+	
+	-webkit-transition: background-size 1s ease;
+    -moz-transition: background-size 1s ease;
+    transition: background-size 1s ease;
+
+    &:nth-child(even) {
+		background-color: $black;
+	}
+	
+	&:nth-child(odd) {
+		background-color: $white;
+	}
+	
+	&:hover {
+		overflow: hidden;
+		background-size: 170%;
+	}
+
+}
+
+.grid_content {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translateX(-50%) translateY(-50%);
+}
+
+.black_text {
+	color: $black;
+}
+
+.white_text {
+	color: $white;
+}
+
+/* ----------------------------------------------------------------------------
+	 	BANNER PICTURE
+---------------------------------------------------------------------------- */
+
+.banner {
+	width: 100%;
+	height: auto;
+	display: block;
+}
+
+
+/* ----------------------------------------------------------------------------
+		 FOOTER
+---------------------------------------------------------------------------- */
+
+footer {
+	background-color: $white;
+	color: $gray;
+	box-sizing: border-box;
+	font-family: $font_nunito;
+	text-align: center; 
+	padding: 15px;
+
+	// Social media icons
+	.fa:before {
+		color: $black;
+		font-size: 2em;
+		text-align: center;
+	}
+
+	.fa:hover::before {
+		color: $gray;
+	}
+
+	h2 {
+		font-size: 0.6em;
+	}
+}
+
+
+/* ----------------------------------------------------------------------------
+		 COOKIE
+---------------------------------------------------------------------------- */
+
+.cookie-notification {
+	text-align: center;
+	padding: 5px;
+
+	p {
+		display: inline;
+	}
+}
