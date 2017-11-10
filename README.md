@@ -1,5 +1,5 @@
-# wp-theme-ella
+# ella-theme
 
 WordPress theme Ella
 
-http://fridalovborg.se/wordpress/
+<a href="http://fridalovborg.se/wordpress/">Demo</a>
